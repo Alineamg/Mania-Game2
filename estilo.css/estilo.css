@@ -1,0 +1,79 @@
+/*fonte*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/*inicio da pagina header*/
+
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+form {
+    border: 1px solid whitesmoke
+    
+     
+}
+
+form input, form button {
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+    
+}
+
+form button {
+    cursor: pointer;
+    background: white;
+    color: whitesmoke;
+        
+}
+
+form button:hover {
+    background-color: white
+   
+
+}
+
+header img{
+    width: 100px;
+}
+
+/* menu mobile*/
+#mobile-menu img{
+    width: 50px;
+}
+#mobile-menu{
+    margin-top: 15px;
+    /*float: right;*/
+    display: none;
+}
+/* ajustando menu*/
+header nav{
+    float: right;
+    
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+header nav ul li{
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+}
+
+    
+
+
