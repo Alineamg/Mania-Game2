@@ -4,6 +4,13 @@
     
 }
 
+
+/*menu mobile*/
+#mobile-menu{
+    margin-top: 15px;
+    float: right;
+    display: none;
+}
 /*inicio da pagina header*/
 
 header{
@@ -74,6 +81,140 @@ header nav ul li{
     
 }
 
+.grupo-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+/*class destaques*/
+.texto-centralizado {
+    text-align: center;
+}
+.card{
+    width: 250px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.card img{
+    width: 100%;
+    border-radius:  4px 4px 0px 0px;
+
+}
+.card div{
+    padding: 10px;
+}
+
+.img-logo{
+    width: 100px;
+    margin: 10px;
+}
+/*destaques*/
+#novidades{
+    background-color: snow;
+    padding: 50px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    margin-top: 20px;
+}
+#novidades img{
+    width: 450px;
+}
+#novidades div{
+margin-top: 20px;
+width:600px ;
+}
+
+/* carrocel galeria*/
+.carousel-inner{
+    height: 80vh;
+}
+.carousel-item img{
+    height: 100%;
+}
+
+#galeria{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*footer rodape*/
+
+footer{
+    background-color: black;
+    display: grid;
+    color: white;
+    padding: 10px;
+    grid-template-areas:
+   'imagem-logo enderecos midias-sociais'
+    'imagem-logo enderecos menu-rodape'
+    'imagem-logo enderecos menu-rodape'
     
+}
+footer {
+    font-size: 15px;
+}
 
+#logotipo-rodape{
+    grid-area: imagem-logo;
+    font-size: 10px;
+    
+}
+#endereco-rodape{
+    grid-area: enderecos;
+    font-size: 10%;
 
+}
+#midias-sociais{
+    grid-area: midias sociais;
+}
+#midias-sociais img{
+    height: 50px;
+    
+}
+#menu-rodape{
+    grid-area: menu-rodape;
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.card{
+    background-color: snow;
+    padding: 50px;
+    color: black;
+    display: inline-flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    margin-top: 20px;
+
+}
+
+#Jogos{
+    text-align: center;
+    font-family: sans-serif;
+    background-color: wheat;
+}
