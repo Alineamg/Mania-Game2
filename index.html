@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Mania-home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css/estilo.css">
     
@@ -14,12 +15,12 @@
 <body>
 <!--Seção do header-->
 <header>
-    <img src="img/logo.png" alt="logotipo Game Mania-home">
+    <img class="img-logo"src="img/logo.png" alt="logotipo Game Mania-home">
     
     <nav>
         
         <ul id="menu">
-            <li><a href="#">Jogos</a></li>
+            <li><a href="Jogos.html">Jogos</a></li>
             <li><a href="#">Hadware</a></li>
             <li><a href="#">Celulares</a></li>
             <li><a href="#">Pc Gamer</a></li>
@@ -27,10 +28,14 @@
             <li><a href="#">Login</a></li>
         </ul>
     </nav>
-    <form action="#" method="post">
-        <input type="text" name="search" id="search" placeholder="Faça sua Busca" required>
-        <button type="submit"><i class="fas fa-search"></i></button>
-    </form>
+    <nav class="navbar navbar-dark bg-light">
+      <div class="container-fluid">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Busca</button>
+        </form>
+      </div>
+    </nav>
     <div id="mobile-menu">
         <img src="img/menu.png" alt="Menu">
 
@@ -80,13 +85,144 @@
 </section>
 
 <!--Seção destaques-->
-<section id="destaque"></section>
+<section id="destaque">
+  <h2 class="texto-centralizado">Destaques</h2>
+  <div class="grupo-card">
+<!--Utilizando os card-->
+<div class="card">
+  <img src="img/game.jpeg"alt="Game">
+  <div>
+    <h4 class="texto-centralizado"> Game</h4>
+    <p> Nitendo Swith</p>
+    <h4 class="texto-centralizado"> R$ 999,99</h4>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img/oculos.jpeg"alt="Oculos realidade virtual">
+    <div>
+      <h4 class="texto-centralizado">Oculos</h4>
+      <p> Oculos realidade virtual</p>
+      <h4 class="texto-centralizado"> R$ 1.250,00</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/controlenitendo.jpeg"alt="Controle de video game">
+      <div>
+        <h4 class="texto-centralizado">Controle de game</h4>
+        <p> Controle para nitendo</p>
+        <h4 class="texto-centralizado"> R$ 320,00</h4>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/funko.jpeg"alt="boneco funko">
+        <div>
+          <h4 class="texto-centralizado">Boneco Funko</h4>
+          <p> Boneco Funko pop</p>
+          <h4 class="texto-centralizado"> R$ 199,99</h4>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/pcgamer.jpeg"alt="computador gamer">
+          <div>
+            <h4 class="texto-centralizado">Computador gamer</h4>
+            <p> Computador gamer top</p>
+            <h4 class="texto-centralizado"> R$ 5.000,00</h4>
+            </div>
+          </div>
+        </div>
+          <div class="texto-centralizado">
+            <a href="#">Saiba mais...</a>
+          </div>
+          
+
+
+
+</section>
 <!--seção novidades-->
-<section id="novidades"></section>
+<section id="novidades">
+  <img src="img/teclado.jpeg" alt="Volante para game">
+  <div>
+    <h2> Venha conhecer as novidades do mês</h2>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam, earum doloremque unde ea nobis deserunt alias officia quo. Voluptates laboriosam molestias cumque consequatur fugit ducimus! Blanditiis quasi odio voluptatibus!</p>
+    <a href="#">Saiba mais...</a> 
+    </div>
+
+
+</section>
 <!--seção galeria-->
-<section id="galeria"></section>
+<section id="galeria">
+  <h2 class="texto-centralizado">Galeria</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/galeria/superm.jpg" class="d-block w-100" alt="imagem do super men">
+      </div>
+      <div class="carousel-item">
+        <img src="img/galeria/fliper.jpg" class="d-block w-100" alt="foto fliperama">
+      </div>
+      <div class="carousel-item">
+        <img src="img/galeria/huck.jpg" class="d-block w-100" alt="imagem do huck">
+      </div>
+      <div class="carousel-item">
+        <img src="img/galeria/mario.jpg" class="d-block w-100" alt="imagem cidade do mario">
+      </div>
+      <div class="carousel-item">
+        <img src="img/galeria/quarto.jpeg" class="d-block w-100" alt="imagem do quarto gamer">
+      </div>
+      <div class="carousel-item">
+        <img src="img/galeria/super.jpg" class="d-block w-100" alt="imagem super heroi">
+      </div>
+      <div class="carousel-item">
+        <img src="img/galeria/superhero.jpg" class="d-block w-100" alt="imagem super heroi">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
 <!--rodape-->
-<footer></footer>
+<footer>
+  <img id="logotipo-rodape" class="img-logo" src="img/logo.png" alt="Logo game mania">
+  <div id="enderecos-rodape">
+      <div>
+       <p>e-mail:</p> 
+       <p> aaa@lllll.com.br</p>
+      </div>
+      <div>
+        <p> Endereço: </p>
+        <p> Al manoel joaquim</p>
+        <p> Bauru-SP CEP: 17056000</p>
+      </div>
+      <div>
+        <p>Telefone:</p>
+        <p> (14)345670909</p>
+        <p> (14) 9999-0000</p>
+      </div>
+  </div>
+  <div id="midias-sociais">
+   <a href="#"><img src="img/redes/instagram.png" alt="Rede Instagram"></a>
+   <a href="#" ><img src="img/redes/facebook.png" alt="Rede Facebook"></a>
+   <a href="#" ><img src="img/redes/twitter.png" alt="Rede Twitter"></a>
+
+
+
+  <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">
+		<i class="fa fa-whatsapp"></i>
+	</a>
+  
+  
+ 
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
